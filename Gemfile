@@ -45,9 +45,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+#bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
-group :develoment, :test do
+group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end
