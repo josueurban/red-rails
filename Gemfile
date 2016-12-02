@@ -47,6 +47,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+#Devise. Authentication solution for rails
+gem 'devise', '~> 4.2'
+
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record

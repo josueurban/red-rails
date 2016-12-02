@@ -19,6 +19,14 @@
       <li><%= link_to "Inicio", root_path %></li>
       <li><%= link_to "Nosotros", about_path %></li>
 
+      <% if user_signed_in?%> <!--Si el usuario esta logeado hacer -->
+      <li>  <%= link_to 'terminar sesion', destroy_user_session_path, method: :delete%></li>
+      <% else %> <!-- de lo contrario hacer--->
+      <li>  <%= link_to 'Iniciar sesion', new_user_session_path%></li>
+
+
+      <% end %>
+
         </ul>
       </li>
     </ul>
