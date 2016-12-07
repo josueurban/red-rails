@@ -6,21 +6,20 @@
 
  <div class="panel-body">
 
-   <div class="field form-group">
+   <div class="field">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :correo_electronico %><br />
     <%= f.email_field :email, autofocus: true, class: 'form-control' %> <!--importante form control para usar un panel body---->
   </div>
 </div>
 
-<div class="field form-group">
-  <div class="field">
+<div class="field">
+  <div class="field form-group">
     <%= f.label :contraseña %><br />
     <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
   </div>
 </div>
-
 
 
 
